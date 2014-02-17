@@ -37,7 +37,7 @@ Let's say we start with Ionic, copy scss from Ionic distribution in your project
 
 > cd TestCordova
 
-> Copy the provided Grunt files
+Copy the provided Grunt files
 
 > npm install
 
