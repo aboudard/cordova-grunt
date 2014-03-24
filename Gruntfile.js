@@ -14,12 +14,19 @@ module.exports = function(grunt){
 				  {src: 'www/res/icon/android/icon-96-xhdpi.png', dest: 'platforms/android/res/drawable-xhdpi/icon.png'}
 				]
 			}
-		}
+		},
+		sass: {
+		    dist: {
+		      files: {
+		        'platforms/android/assets/www/css/app.css' : 'www/scss/app.scss'
+		      }
+		    }
+		  }
     });
 
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
-
-    grunt.registerTask('default', ['clean','copy']);
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.registerTask('default', ['clean','copy','sass']);
 
 };

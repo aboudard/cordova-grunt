@@ -1,12 +1,12 @@
 {
-    "name" : "SampleGrunt",
-    "version" : "0.1.0",
-    "author" : "Brandon Random",
-    "private" : true,
-
-    "devDependencies" : {
-        "grunt" :                   "~0.4.0",
-        "grunt-contrib-copy":		"*",
-        "grunt-contrib-clean":		"*"
-    } 
+  "name": "CordovaGrunt",
+  "version": "0.1.0",
+  "author": "Alain Boudard",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-sass": "~0.7.3"
+  }
 }
