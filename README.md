@@ -7,6 +7,8 @@ When you have a cordova project, some folders and image files are :
 - irrelevant
 - not generated
 
+I just added sass compiling of the ionic app.scss.
+
 Icons are only generated with Phonegap Build.
 
 The reference file structure this script is based on can be found here : https://github.com/phonegap/phonegap-start
