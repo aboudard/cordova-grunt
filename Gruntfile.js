@@ -24,8 +24,8 @@ module.exports = function(grunt){
 			}
 		},
 		shell: {
-	        makeDir: {
-	            command: 'cordova build android'
+	        cordova-shell: {
+	            command: ['cordova platform add android','cordova build android']
 	        }
 	    }
     });
