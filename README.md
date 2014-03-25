@@ -1,21 +1,32 @@
 cordova-grunt
 =============
 
-# Cordova grunt script to clean and copy images
+This project aims to make the build process of a cordova-ionic Android project easier.
+
+# Cordova grunt script to build a Ionic project.
 
 When you have a cordova project, some folders and image files are :
 - irrelevant
 - not generated
-
-I just added sass compiling of the ionic app.scss.
+- depending on the UI framework you use
 
 Icons are only generated with Phonegap Build.
 
 The reference file structure this script is based on can be found here : https://github.com/phonegap/phonegap-start
 The script is all about copying icons.
-A clean task was added to remove a scss folder (considering you work with Ionic UI framework).
+A clean task was added to remove a /scss folder (considering you work with Ionic UI framework).
+A clean task was added to remove a /res folder (from phoengap-start)
+A sass compiling task was added for the ionic app.scss.
 
-You mus build your cordova project BEFORE you run the grunt command.
+
+## The grunt command will build the Android application for you. Here are the steps :
+
+- sass compile
+- Android cordova build
+- clean scss and res folders in platform folder
+- copy assets in platform folder
+
+
 
 # Usage
 
@@ -32,7 +43,8 @@ You mus build your cordova project BEFORE you run the grunt command.
 > cordova platform add android
 
 ## Copy desired assets
-Let's say we start with Ionic, copy scss from Ionic distribution in your project.
+Let's say we start with Ionic, copy /scss from Ionic distribution in your /www project.
+You copy the /res folder from phonegap-start in your /www folder.
 
 
 ## Install grunt tasks
