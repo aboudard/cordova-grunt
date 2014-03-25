@@ -19,7 +19,7 @@ module.exports = function(grunt){
 		sass: {
 		    dist: {
 		    	files: {
-		        	'platforms/android/assets/www/css/app.css' : 'www/scss/app.scss'
+		        	'www/css/app.css' : 'www/scss/app.scss'
 		    	}
 			}
 		},
